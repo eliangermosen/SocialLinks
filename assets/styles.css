@@ -1,8 +1,145 @@
-img {
-  max-width: 20%;
+/* 
+PALETA COLORES USADA:
+#6c757d GRIS CLARO
+#23456c AZUL MARINO
+#647fa6 AZUL CASI GRIS
+#f7f7ff BLANCO
+#f57600; NARANJA
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #23456c;
+  color: #f7f7ff;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+::selection {
+  background: #f57600; /*Color naranja para el fondo seleccionado*/
+  color: #fff; /* Color blanco para el texto seleccionado */
+}
+
+hr {
+  height: 1.5px;
+  width: 100%;
+  border-top-color: #6c757d;
+  border-bottom-color: #647fa6;
+  background-color: #647fa6;
+}
+
+h1 {
+  margin: 8px 0;
+  text-align: center;
+  color: #f57600;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.div-redondo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.div-redondo img {
+  width: 100%;
   height: auto;
 }
 
-* {
+.info div {
+  margin-bottom: 8px;
+}
+
+* a[href] {
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
+  font-weight: bold;
+  color: #f7f7ff;
+}
+
+a:hover,
+button:hover {
+  color: #f57600;
+}
+
+.btn-github:hover,
+.btn-youtube:hover,
+.btn-linkedin:hover {
+  background-color: #23456c;
+  border-color: #647fa6;
+}
+
+.buttons {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.buttons img {
+  max-width: 13%;
+  height: auto;
+}
+
+.btn-github,
+.btn-youtube {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #f7f7ff;
+  background-color: #647fa6;
+  border: 3px solid #6c757d;
+  margin: 10px 0 10px;
+  padding: 5px;
+  width: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-linkedin {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #f7f7ff;
+  background-color: #647fa6;
+  border: 3px solid white;
+  padding: 5px;
+  width: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.img-socials {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 5px;
+}
+
+.img-gmail,
+.img-instagram,
+.img-twitter,
+.img-telegram {
+  width: 60px;
+  height: auto;
+  padding: 5px;
+}
+
+footer {
+  background-color: #647fa6;
+}
+
+footer .p-footer {
+  padding: 12px;
 }
