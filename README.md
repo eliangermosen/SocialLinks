@@ -5,7 +5,7 @@ or the ways of comunication just for say of a person in this case mine, the same
 
 ##Screenshots
 ###From Cellphone
-<img src="./assets/img/" alt="Cellphone" width="414" height="736">
+<img alt="Cellphone" src="./assets/img/" width="414" height="736">
 
 ###From PC
-<img src="./assets/img/" alt="PC" width="1086" height="754">
+<img alt="PC" src="./assets/img/" width="1086" height="754">
