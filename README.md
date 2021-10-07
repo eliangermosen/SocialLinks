@@ -4,6 +4,7 @@ This project is called SocialLinks because it is about create a personal web pag
 or the ways of comunication just for say of a person in this case mine, the same project has been developed with HTML & CSS.
 
 ##Screenshots
+
 ###From Cellphone
 <img alt="Cellphone" src="./assets/img/" width="414" height="736">
 
