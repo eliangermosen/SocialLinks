@@ -10,6 +10,7 @@ PALETA COLORES USADA:
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -64,6 +65,12 @@ p {
   margin-bottom: 8px;
 }
 
+.p-info {
+  width: 100%;
+  max-width: 740px;
+  margin: auto;
+}
+
 * a[href] {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -74,13 +81,6 @@ p {
 a:hover,
 button:hover {
   color: #f57600;
-}
-
-.btn-github:hover,
-.btn-youtube:hover,
-.btn-linkedin:hover {
-  background-color: #23456c;
-  border-color: #647fa6;
 }
 
 .buttons {
@@ -100,12 +100,14 @@ button:hover {
   font-weight: bold;
   color: #f7f7ff;
   background-color: #647fa6;
-  border: 3px solid white;
+  /* border: 3px solid white; */
+  border: none;
   margin: 10px 0 10px;
   padding: 5px;
   width: 300px;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 600ms;
 }
 
 .btn-linkedin {
@@ -113,18 +115,29 @@ button:hover {
   font-weight: bold;
   color: #f7f7ff;
   background-color: #647fa6;
-  border: 3px solid white;
+  /* border: 3px solid white; */
+  border: none;
   padding: 5px;
   width: 300px;
   border-radius: 8px;
   cursor: pointer;
 }
 
+.btn-github:hover,
+.btn-youtube:hover,
+.btn-linkedin:hover {
+  /* background-color: #23456c; */
+  /* border-color: #647fa6; */
+  box-shadow: 2px 2px 0px 0px #f57600, 4px 4px #f8a355, 6px 6px #fac18d;
+  transform: translate(-2px, -2px);
+}
+
 .img-socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
   margin: 5px;
+  transition: all 600ms;
 }
 
 .img-gmail,
@@ -134,6 +147,11 @@ button:hover {
   width: 60px;
   height: auto;
   padding: 5px;
+  transition: all 500ms;
+}
+
+.img-socials img:hover {
+  transform: translate(-6px, -6px);
 }
 
 footer {
